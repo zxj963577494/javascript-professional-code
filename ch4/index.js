@@ -48,3 +48,13 @@
  setName(person);
  alert(person.name);
  */
+
+//循环引用
+function problem() {
+    var obj1 = new Object();
+    var obj2 = new Object();
+    obj1.otherObject = obj2;
+    obj2.anotherObject = obj1;
+}
+
+
